@@ -18,11 +18,9 @@ Adding the KalturaClient to an Xcode 4 project
 		the KalturaClient project from XCode - drag it from Finder)
 	KalturaClient.xcodeproj should now appears under your project and be expandable
 4. Click on your project and select Build Settings->Search Paths
-5. Add the following paths to 'Header Search Paths'
-	../KalturaClient/KalturaClient
-	../KalturaClient/KalturaClient/ASIHTTPRequest
-	../KalturaClient/KalturaClient/KalturaPlugins
-	NOTE: these paths apply when your project is saved under the same folder as KalturaClient
+5. Add the following path to 'Header Search Paths' and select recursive
+	KalturaClient/KalturaClient
+	NOTE: this path apply when your project is saved under the same folder as KalturaClient
 		if it's not, adjust the paths appropriately
 6. Click on your project and select Build Phases
 7. Locate libKalturaClient.a under KalturaClient.xcodeproj->Products
